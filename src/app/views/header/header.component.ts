@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   
 })
 export class HeaderComponent {
-  
+  aoClicarLogin(): void {
+    console.log('O usuário clicou no botão de login!');
+  }
 }

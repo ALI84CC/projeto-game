@@ -1,0 +1,24 @@
+<div class="container-login">
+    <div class="card-login">
+        <div *ngIf="mensagem" [class]="isSucesso ? 'alerta sucesso':  'alerta  erro'">
+            {{mensagem}}
+        </div>
+
+        <mat-form-field appearance="fill">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" [(ngModel)]="emailInput" placeholder="exemplo@email.com">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" [(ngModel)]="senhaInput" placeholder="123456">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" class="btn-entrar" (click)="executarLogin()">
+            Entrar
+        </button>
+    </div>
+</div>
+
+
+

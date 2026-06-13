@@ -1,8 +1,36 @@
 <div class="banner-home">
     <img src='/assets/img/Tecnologia.webp' alt="Banner Home">
-    <div class="texto-home">
-        <button mat-raised-button class="btn">Vp</button>
-        <h1>{{titulo}}</h1>
-        <p>{{texto}}</p>
+    
+    <div class="container-banner" >
+     
+        <div class="coluna-texto">
+            <button mat-raised-button class="btn">Vp</button>
+            <h1>{{titulo}}</h1>
+            <p>{{texto}}</p>
+        </div>
+
+        <div class="coluna-form">
+            <div class="card-cadastro">
+                <h2>Crie sua conta</h2>
+                
+                <mat-form-field appearance="outline">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Seu nome completo">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="email" placeholder="seu@email.com">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" placeholder="Sua senha">
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" class="btn-salvar">Salvar</button>
+            </div>
+        </div>
     </div>
 </div>
+
